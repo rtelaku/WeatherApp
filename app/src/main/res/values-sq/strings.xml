@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FirstApp</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Fjalekalimi</string>
+    <string name="action_sign_in">Kycu ose regjistrohu</string>
+    <string name="action_sign_in_short">Kycu</string>
+    <string name="welcome">"Miresevini!"</string>
+    <string name="invalid_username">Ky username nuk edhe valid</string>
+    <string name="invalid_password">Fjalekalimi duhet te permbaje > 5 karaktere</string>
+    <string name="login_failed">"Kycja deshtoi"</string>
+    <string name="today">Sot:</string>
+    <string name="language">Gjuha</string>
+    <string name="albanianLanguage">Shqip</string>
+    <string name="englishLanguage">Anglisht</string>
+    <string name="select_your_location">Zgjedhni lokacionin tuaj:</string>
+</resources>

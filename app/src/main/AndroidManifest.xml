@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.firstapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:name=".utils.WeatherApp"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FirstApp"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.example.firstapp.ui.graph.GraphActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.localization.LocalizationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.main.MainWeatherActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".loginform.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.cityWeatherDetails.CityWeatherDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".loginform.MainActivity"
+            android:exported="true" />
+
+        <receiver android:name=".alarmManager.AlarmReceiver" />
+        <receiver
+            android:name=".alarmManager.OnBootReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
